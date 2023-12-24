@@ -6,8 +6,6 @@ import bolt from '../../assets/icon-bolt.svg';
 import weightIcon from '../../assets/icon-weight.svg';
 import rulerIcon from '../../assets/icon-ruler.svg';
 import { useState } from "react";
-import { setPokemonStats, removePokemonStats } from "../store/stats/statsSlice";
-import { useDispatch, useSelector } from "react-redux";
 import StatsModel from "./StatsModel";
 
 
@@ -27,7 +25,7 @@ const PokemonCard: React.FC<Pokemon> = ({
   types,
   stats,
 }) => {
-  const dispatch = useDispatch();
+
   const pType = types[0].type.name;
   const colorCode = getColorCode(pType);
   const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png`

@@ -1,5 +1,4 @@
 import PokemonLogo from '../../../assets/logo-pokemon.svg';
-import { pokemonTypes } from '../../../pokemonTypesData';
 
 const Navbar = () => {
   return (
